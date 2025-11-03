@@ -51,9 +51,8 @@ jobs:
         context: .
         push: true
         tags: |
-          ghcr.io/${{ github.repository_owner }}/servidor-c-cicd:latest
-          ghcr.io/${{ github.repository_owner }}/servidor-c-cicd:${{ github.sha }}
-    
+          ghcr.io/italdao/servidor-c-cicd:latest
+          ghcr.io/italdao/servidor-c-cicd:${{ github.sha }}
     - name: Resumen del despliegue
       run: |
         echo "Imagen publicada exitosamente"
